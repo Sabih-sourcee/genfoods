@@ -1,0 +1,6 @@
+{
+  "name": "GenFoods",
+  "description": "Fun treats kids love, quality parents trust. Premium Pakistani gummies and fruit chews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@theme {
+  --color-cream-bg: #FFF8EF;
+  --color-deep-grape: #3D1E52;
+  --color-gummy-orange: #FF7A45;
+  --color-berry-pink: #FF4F81;
+  --color-leaf-green: #4CAF7D;
+  --color-on-surface: #3D1E52;
+  --color-on-surface-variant: #3D1E52;
+  --color-on-primary: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-outline: #3D1E52;
+
+  --font-fredoka: 'Fredoka', sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+
+  --spacing-margin-mobile: 20px;
+  --spacing-container-max: 1280px;
+  --spacing-margin-desktop: 64px;
+  --spacing-gutter: 24px;
+  --spacing-unit: 8px;
+}
+
+@layer utilities {
+  .font-headline-lg {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+  .font-display-lg {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+  }
+  .font-headline-md {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  .font-body-lg {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+  .font-body-md {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .font-label-md {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+  }
+  .font-label-sm {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+}
