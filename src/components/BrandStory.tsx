@@ -1,14 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface BrandStoryProps {
-  onOpenOurStory: () => void;
+  showLearnMore?: boolean;
 }
 
-export const BrandStory: React.FC<BrandStoryProps> = ({ onOpenOurStory }) => {
+export const BrandStory: React.FC<BrandStoryProps> = ({ showLearnMore = true }) => {
   return (
-    <section className="px-4 md:px-[64px] py-16 md:py-24 bg-[#FFF8EF]" id="about">
+    <section className="px-4 md:px-[64px] py-16 md:py-24 bg-[#FFF8EF]">
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-        {/* Left Copy */}
         <div className="flex flex-col gap-6 md:gap-8">
           <span className="font-['DM_Sans'] text-[12px] font-bold uppercase tracking-[0.1em] text-[#4CAF7D]">
             Our Heritage
@@ -50,18 +50,19 @@ export const BrandStory: React.FC<BrandStoryProps> = ({ onOpenOurStory }) => {
             </div>
           </div>
 
-          <div className="pt-2">
-            <button
-              onClick={onOpenOurStory}
-              className="inline-flex items-center gap-2 bg-[#4CAF7D] hover:bg-[#3D1E52] text-white font-['DM_Sans'] text-[14px] font-bold px-6 py-3 rounded-full transition-all duration-300 shadow-sm cursor-pointer active:scale-95"
-            >
-              Learn More About Our Journey
-              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-            </button>
-          </div>
+          {showLearnMore && (
+            <div className="pt-2">
+              <Link
+                to="/about"
+                className="inline-flex items-center gap-2 bg-[#4CAF7D] hover:bg-[#3D1E52] text-white font-['DM_Sans'] text-[14px] font-bold px-6 py-3 rounded-full transition-all duration-300 shadow-sm cursor-pointer active:scale-95"
+              >
+                Learn More About Our Journey
+                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </Link>
+            </div>
+          )}
         </div>
 
-        {/* Right Photo Frame with Quote Overlay */}
         <div className="relative">
           <div className="absolute -top-12 -left-12 w-64 h-64 bg-[#FF4F81]/10 rounded-full -z-10 blur-3xl" />
           <div className="rounded-[40px] overflow-hidden rotate-3 shadow-xl border-4 border-white transform hover:rotate-0 transition-transform duration-500">

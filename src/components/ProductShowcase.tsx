@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Product } from '../types';
 
 interface ProductShowcaseProps {
   products: Product[];
   onAddToCart: (product: Product, e: React.MouseEvent) => void;
   onSelectProduct: (product: Product) => void;
+  viewAllLink?: string;
 }
 
 export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
   products,
   onAddToCart,
   onSelectProduct,
+  viewAllLink,
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
@@ -51,16 +54,28 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
               </button>
             ))}
 
-            {selectedCategory !== 'All' && (
-              <button
-                onClick={() => setSelectedCategory('All')}
-                className="font-['Fredoka'] text-[16px] text-[#3D1E52] flex items-center gap-1.5 hover:text-[#FF7A45] transition-colors ml-2 cursor-pointer"
+            {viewAllLink ? (
+              <Link
+                to={viewAllLink}
+                className="font-['Fredoka'] text-[16px] text-[#3D1E52] flex items-center gap-1.5 hover:text-[#FF7A45] transition-colors ml-2"
               >
                 View All Products{' '}
                 <span className="material-symbols-outlined text-[18px]">
                   arrow_forward
                 </span>
-              </button>
+              </Link>
+            ) : (
+              selectedCategory !== 'All' && (
+                <button
+                  onClick={() => setSelectedCategory('All')}
+                  className="font-['Fredoka'] text-[16px] text-[#3D1E52] flex items-center gap-1.5 hover:text-[#FF7A45] transition-colors ml-2 cursor-pointer"
+                >
+                  View All Products{' '}
+                  <span className="material-symbols-outlined text-[18px]">
+                    arrow_forward
+                  </span>
+                </button>
+              )
             )}
           </div>
         </div>

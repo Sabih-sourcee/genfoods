@@ -1,14 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-interface HeroSectionProps {
-  onOpenOurStory: () => void;
-}
-
-export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenOurStory }) => {
+export const HeroSection: React.FC = () => {
   return (
     <section className="relative px-4 md:px-[64px] py-16 md:py-24 overflow-hidden bg-[#FFF8EF]">
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-16">
-        {/* Left Copy Column */}
         <div className="lg:col-span-6 flex flex-col gap-6 md:gap-8 z-10">
           <h1 className="font-['Fredoka'] text-[36px] sm:text-[44px] lg:text-[56px] leading-[1.15] font-extrabold text-[#3D1E52] tracking-tight">
             Fun treats kids love,<br />
@@ -18,17 +14,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenOurStory }) => {
             Crafted with care using only the finest ingredients. Our gummies are the perfect balance of delightful flavor and wholesome quality, making snack time the highlight of every day.
           </p>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 pt-2">
-            <a
+            <Link
+              to="/products"
               className="bg-[#FF7A45] hover:bg-[#FF4F81] text-white font-['DM_Sans'] text-[14px] font-bold px-8 sm:px-10 py-4 sm:py-5 rounded-full transition-all duration-300 inline-block shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-95"
-              href="#products"
             >
               Explore Products
-            </a>
-            <button
-              type="button"
-              onClick={onOpenOurStory}
-              className="flex items-center gap-3 group cursor-pointer border-none bg-transparent"
-            >
+            </Link>
+            <Link to="/about" className="flex items-center gap-3 group cursor-pointer">
               <div className="w-12 h-12 rounded-full bg-[#FFF8EF] border-2 border-[#4CAF7D] flex items-center justify-center group-hover:bg-[#4CAF7D] transition-colors shadow-sm">
                 <span className="material-symbols-outlined text-[#4CAF7D] group-hover:text-white transition-colors">
                   play_arrow
@@ -37,13 +29,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenOurStory }) => {
               <span className="font-['Fredoka'] text-[22px] md:text-[24px] font-bold text-[#3D1E52] group-hover:text-[#FF7A45] transition-colors">
                 Our Story
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 
-        {/* Right Graphic / Image Column */}
         <div className="lg:col-span-6 relative flex justify-center items-center">
-          {/* Organic Blob Backdrop */}
           <div className="absolute w-[120%] h-[120%] -z-10 pointer-events-none">
             <svg
               className="w-full h-full fill-[#FF7A45]/10 animate-pulse"

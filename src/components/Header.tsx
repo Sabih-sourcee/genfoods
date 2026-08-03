@@ -1,26 +1,34 @@
 import React, { useState } from 'react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
   cartItemCount: number;
   onOpenCart: () => void;
-  onOpenStoreLocator: () => void;
   onOpenProfile: () => void;
-  activeSection?: string;
 }
+
+const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+  `font-['Fredoka'] text-[20px] transition-all duration-300 hover:scale-105 ${
+    isActive ? 'text-[#FF7A45] font-bold' : 'text-[#3D1E52] hover:text-[#FF7A45]'
+  }`;
+
+const mobileNavLinkClass = ({ isActive }: { isActive: boolean }) =>
+  `font-['Fredoka'] text-[22px] font-bold ${
+    isActive ? 'text-[#FF7A45]' : 'text-[#3D1E52]'
+  }`;
 
 export const Header: React.FC<HeaderProps> = ({
   cartItemCount,
   onOpenCart,
-  onOpenStoreLocator,
-  onOpenProfile
+  onOpenProfile,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="fixed top-0 w-full z-50 bg-[#FFF8EF]/80 backdrop-blur-xl border-b border-[#3D1E52]/5 transition-all">
       <div className="h-20 w-full px-4 md:px-[64px] flex items-center justify-between gap-4 md:gap-[24px]">
-        {/* Logo & Brand Name */}
-        <a href="#" className="flex items-center gap-2 group">
+        <Link to="/" className="flex items-center gap-2 group" onClick={() => setMobileMenuOpen(false)}>
           <img
             alt="GenFoods Logo"
             className="h-8 w-auto object-contain transition-transform group-hover:scale-105"
@@ -29,51 +37,31 @@ export const Header: React.FC<HeaderProps> = ({
           <span className="font-['Fredoka'] text-[28px] leading-[36px] font-bold text-[#3D1E52] tracking-tight">
             GenFoods
           </span>
-        </a>
+        </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10">
-          <a
-            className="transition-all duration-300 text-[#FF7A45] font-bold font-['Fredoka'] text-[20px] hover:scale-105"
-            href="#products"
-          >
+          <NavLink to="/products" className={navLinkClass}>
             Products
-          </a>
-          <a
-            className="font-['Fredoka'] text-[20px] text-[#3D1E52] hover:text-[#FF7A45] transition-all duration-300 hover:scale-105"
-            href="#about"
-          >
+          </NavLink>
+          <NavLink to="/about" className={navLinkClass}>
             About
-          </a>
-          <a
-            className="font-['Fredoka'] text-[20px] text-[#3D1E52] hover:text-[#FF7A45] transition-all duration-300 hover:scale-105"
-            href="#where-to-buy"
-            onClick={(e) => {
-              e.preventDefault();
-              onOpenStoreLocator();
-            }}
-          >
+          </NavLink>
+          <NavLink to="/where-to-buy" className={navLinkClass}>
             Where to Buy
-          </a>
-          <a
-            className="font-['Fredoka'] text-[20px] text-[#3D1E52] hover:text-[#FF7A45] transition-all duration-300 hover:scale-105"
-            href="#contact"
-          >
+          </NavLink>
+          <NavLink to="/contact" className={navLinkClass}>
             Contact
-          </a>
+          </NavLink>
         </nav>
 
-        {/* Action Buttons */}
         <div className="flex items-center gap-3 md:gap-[24px]">
-          {/* Find Near You CTA */}
           <button
-            onClick={onOpenStoreLocator}
+            onClick={() => navigate('/where-to-buy')}
             className="bg-[#FF7A45] hover:bg-[#FF4F81] text-white font-['DM_Sans'] text-[14px] font-bold tracking-[0.02em] px-4 md:px-6 py-2.5 md:py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer whitespace-nowrap active:scale-95"
           >
             Find Near You
           </button>
 
-          {/* Cart Icon Button */}
           <button
             onClick={onOpenCart}
             className="relative w-10 h-10 rounded-full bg-[#3D1E52]/5 hover:bg-[#FF7A45] hover:text-white text-[#3D1E52] flex items-center justify-center transition-all cursor-pointer active:scale-95 group"
@@ -90,7 +78,6 @@ export const Header: React.FC<HeaderProps> = ({
             )}
           </button>
 
-          {/* Profile Icon Button */}
           <button
             onClick={onOpenProfile}
             className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#FF7A45] flex items-center justify-center hover:scale-110 hover:bg-[#FF4F81] transition-all cursor-pointer shadow-sm active:scale-90"
@@ -102,7 +89,6 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
           </button>
 
-          {/* Mobile Menu Hamburger Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden w-10 h-10 rounded-full bg-[#3D1E52]/5 text-[#3D1E52] flex items-center justify-center cursor-pointer"
@@ -115,44 +101,41 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
       </div>
 
-      {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-[#FFF8EF] border-b border-[#3D1E52]/10 px-6 py-6 flex flex-col gap-4 animate-in slide-in-from-top-4 duration-300 shadow-xl">
-          <a
+          <NavLink
+            to="/products"
             onClick={() => setMobileMenuOpen(false)}
-            href="#products"
-            className="font-['Fredoka'] text-[22px] font-bold text-[#FF7A45]"
+            className={mobileNavLinkClass}
           >
             Products
-          </a>
-          <a
+          </NavLink>
+          <NavLink
+            to="/about"
             onClick={() => setMobileMenuOpen(false)}
-            href="#about"
-            className="font-['Fredoka'] text-[22px] font-bold text-[#3D1E52]"
+            className={mobileNavLinkClass}
           >
             About
-          </a>
-          <button
-            onClick={() => {
-              setMobileMenuOpen(false);
-              onOpenStoreLocator();
-            }}
-            className="font-['Fredoka'] text-[22px] font-bold text-[#3D1E52] text-left"
+          </NavLink>
+          <NavLink
+            to="/where-to-buy"
+            onClick={() => setMobileMenuOpen(false)}
+            className={mobileNavLinkClass}
           >
             Where to Buy
-          </button>
-          <a
+          </NavLink>
+          <NavLink
+            to="/contact"
             onClick={() => setMobileMenuOpen(false)}
-            href="#contact"
-            className="font-['Fredoka'] text-[22px] font-bold text-[#3D1E52]"
+            className={mobileNavLinkClass}
           >
             Contact
-          </a>
+          </NavLink>
           <div className="pt-4 border-t border-[#3D1E52]/10 flex flex-col gap-3">
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
-                onOpenStoreLocator();
+                navigate('/where-to-buy');
               }}
               className="w-full bg-[#FF7A45] text-white font-bold py-3 rounded-full text-center"
             >
