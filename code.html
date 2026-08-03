@@ -1,0 +1,287 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"surface-container-lowest":"#ffffff","background":"#fff8f0","on-surface-variant":"#58423a","surface-container-low":"#f9f3ea","on-primary-fixed":"#380d00","berry-pink":"#FF4F81","deep-grape":"#3D1E52","on-tertiary-fixed":"#002112","error-container":"#ffdad6","surface-container-high":"#eee7de","secondary":"#b91150","on-secondary-fixed-variant":"#90003b","on-secondary-container":"#5a0022","on-error-container":"#93000a","on-tertiary-fixed-variant":"#005232","on-tertiary":"#ffffff","outline":"#8b7168","on-background":"#1e1b16","on-error":"#ffffff","inverse-on-surface":"#f7f0e7","tertiary-fixed-dim":"#77daa4","on-secondary":"#ffffff","surface-container":"#f4ede4","inverse-primary":"#ffb59a","primary-container":"#ff7a45","leaf-green":"#4CAF7D","primary":"#a73a05","secondary-fixed-dim":"#ffb2bf","on-tertiary-container":"#004127","surface-bright":"#fff8f0","surface":"#fff8f0","surface-dim":"#dfd9d0","inverse-surface":"#33302a","secondary-fixed":"#ffd9de","primary-fixed-dim":"#ffb59a","primary-fixed":"#ffdbcf","on-primary-container":"#672000","on-secondary-fixed":"#3f0016","on-primary-fixed-variant":"#802900","on-primary":"#ffffff","outline-variant":"#dfc0b5","gummy-orange":"#FF7A45","tertiary":"#006c44","error":"#ba1a1a","surface-variant":"#e8e2d9","on-surface":"#1e1b16","cream-bg":"#FFF8EF","secondary-container":"#fe4e80","tertiary-container":"#50b381","surface-tint":"#a73a05","tertiary-fixed":"#93f7bf","surface-container-highest":"#e8e2d9"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"20px","container-max":"1280px","margin-desktop":"64px","gutter":"24px","unit":"8px"},"fontFamily":{"body-lg":["DM Sans"],"body-md":["DM Sans"],"label-md":["DM Sans"],"label-sm":["DM Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"700"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-cream-bg font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-cream-bg/80 backdrop-blur-xl shadow-[0_4px_12px_rgba(61,30,82,0.05)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-unit"><img alt="GenFoods Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ8xMrJbBZbQvHHDZh2nNaDYvaUHgFCB_HFAgMd6VcwQYqLsjXcWEria5cMGKG4nepROl_3dte7yXk6bLSRh_XfKbStQlOjMkpsRNkP86ZjyoLHG3Wc3EBHCb_QRq5LoWB2hoawosdoCUU761SswbthJYigUX3TN3ZSqjOcDkBcPi6JCr9sWnZB4Rdu8vH78klA1Z85AVY82ZeIRZI-nCTnjihAWi6Ne3NSK9TKt5K-hTQkvvGUAez"><span class="font-headline-md text-headline-md text-deep-grape tracking-tight">GenFoods</span></div><nav class="hidden md:flex items-center gap-10" data-active-classes="text-gummy-orange font-bold"><a class="transition-all duration-300 text-gummy-orange font-bold" href="#products">Products</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-deep-grape transition-all duration-300" href="#about">About</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-deep-grape transition-all duration-300" href="#where-to-buy">Where to Buy</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-deep-grape transition-all duration-300" href="#contact">Contact</a></nav><div class="flex items-center gap-gutter"><a href="#where-to-buy" class="bg-gummy-orange text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:shadow-[0_4px_0_0_#a73a05] active:translate-y-[2px] active:shadow-none transition-all inline-block">Find Near You</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-cream-bg min-h-screen"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative px-margin-desktop py-24 overflow-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-16 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="lg:col-span-6 flex flex-col gap-8 z-10">
+<h1 class="font-display-lg text-display-lg text-deep-grape leading-tight">
+                    Fun treats kids love,<br>
+<span class="text-gummy-orange">quality parents trust.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Crafted with care using only the finest ingredients. Our gummies are the perfect balance of delightful flavor and wholesome quality, making snack time the highlight of every day.
+                </p>
+<div class="flex items-center gap-6">
+<a href="#products" class="bg-gummy-orange text-on-primary font-label-md text-label-md px-10 py-5 rounded-full hover:shadow-[0_6px_0_0_#a73a05] hover:-translate-y-1 transition-all duration-300 inline-block">Explore Products</a>
+<a href="#about" class="flex items-center gap-2 group cursor-pointer"><div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-leaf-green transition-colors"><span class="material-symbols-outlined text-leaf-green group-hover:text-on-tertiary">play_arrow</span></div><span class="font-label-md text-label-md text-deep-grape">Our Story</span></a>
+</div>
+</div>
+<div class="lg:col-span-6 relative flex justify-center items-center">
+<!-- Organic Blob Backdrop -->
+<div class="absolute w-[120%] h-[120%] -z-10 animate-pulse duration-[10s]">
+<svg class="w-full h-full fill-gummy-orange/10" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.7,-76.4C58.1,-69.2,69.5,-57.4,77.3,-43.8C85.1,-30.2,89.2,-15.1,88.4,-0.4C87.7,14.3,82,28.6,73.5,41C65.1,53.3,53.8,63.7,40.7,70.9C27.5,78.1,13.8,82,-0.4,82.8C-14.6,83.5,-29.1,81.1,-42.6,74.1C-56.1,67,-68.5,55.3,-76.5,41.4C-84.5,27.5,-88,11.3,-87.3,-4.5C-86.7,-20.3,-81.9,-35.6,-72.6,-47.9C-63.3,-60.2,-49.4,-69.5,-35.1,-76.1C-20.7,-82.7,-10.4,-86.6,2.5,-90.9C15.4,-95.2,31.3,-83.6,44.7,-76.4Z" transform="translate(100 100)"></path>
+</svg>
+</div>
+<img alt="GenFoods Gummy Packaging" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(61,30,82,0.15)] rounded-3xl transform rotate-2 hover:rotate-0 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Wn4PQoX8f7qx1pl-v7OVaNUfW90DANUxu6Z2mEcOjghnZ-3FPwDVtIj75uAq40_1FpixjViGJbR9h4JWZk_2LphvqjyvXT0jqGA_vjapWPFMAUIx5kMHGHv1eX8uIMbhtPdH_D_um3WD85DcbNqdErIJXmfWHzhnx6plCX1aTKw4zBVvv-Qg-nuVh39Kb5RGFFRil3g1ZHFo5LkSjdn2n2nbPoikWb5aMO4HSqfwErMN34MJgjs1">
+</div>
+</div>
+</section>
+<!-- Trust Strip -->
+<section class="px-margin-desktop py-12">
+<div class="max-w-container-max mx-auto grid grid-cols-2 lg:grid-cols-4 gap-gutter transition-all duration-1000 opacity-100 translate-y-0">
+<div class="flex items-center gap-4 bg-surface-container-lowest px-6 py-4 rounded-full shadow-sm">
+<div class="w-10 h-10 rounded-full bg-leaf-green/10 flex items-center justify-center text-leaf-green">
+<span class="material-symbols-outlined">turn_left</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">No Artificial Colors</span>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest px-6 py-4 rounded-full shadow-sm">
+<div class="w-10 h-10 rounded-full bg-leaf-green/10 flex items-center justify-center text-leaf-green">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Halal Certified</span>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest px-6 py-4 rounded-full shadow-sm">
+<div class="w-10 h-10 rounded-full bg-leaf-green/10 flex items-center justify-center text-leaf-green">
+<span class="material-symbols-outlined">thumb_up</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Kid-Approved Taste</span>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest px-6 py-4 rounded-full shadow-sm">
+<div class="w-10 h-10 rounded-full bg-leaf-green/10 flex items-center justify-center text-leaf-green">
+<span class="material-symbols-outlined">flag</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Made in Pakistan</span>
+</div>
+</div>
+</section>
+<!-- Product Showcase -->
+<section class="px-margin-desktop py-24 bg-surface-container-low" id="products">
+<div class="max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+<div class="flex justify-between items-end mb-16">
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Our Favorites</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-grape">Explore the Sweetness</h2>
+</div>
+<button class="font-label-md text-label-md text-deep-grape flex items-center gap-2 hover:text-gummy-orange transition-colors">
+                    View All Products <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-lowest p-6 rounded-[24px] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+<div class="relative w-full aspect-square rounded-2xl bg-[#E0F2F1] mb-6 overflow-hidden flex items-center justify-center">
+<img class="w-3/4 h-auto transform group-hover:scale-110 transition-transform duration-500" data-alt="A brightly colored package of 'Fruity Bears' gummy candies with cute illustrated bear characters. The bag is a vibrant turquoise with orange accents, featuring real gummy bears visible through a transparent window. Studio lighting, playful mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxKjZZM-YiVTxDPv18-0N6ktvOwrbFDfSfbdHwgZpd6TozHyHnsQoj0YqR_fOjuGy-6_18x6hKGukD-OsIivHBG2DrCwkufQ-i_pntH_KnBSbC4PMYvVm9IgHZFGS-es7HLjQPxFxskF299Un-SOxwYKOtpgYuG69HSFaBRiJgSMAx_Svzfe4cGfjTgBTauN9pSDnsYqWcoBq2N-MPI4AlsnRiOSbDpNW42pHlNJg1muG3aMN8Rwmo">
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-md text-[20px] text-deep-grape">Fruity Bears</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Assorted natural fruit juices</p>
+<div class="mt-4 flex justify-between items-center">
+<span class="font-label-md text-label-md text-deep-grape">Rs. 150</span>
+<button class="w-10 h-10 rounded-full bg-gummy-orange text-white flex items-center justify-center hover:scale-110 transition-transform active:scale-90">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-lowest p-6 rounded-[24px] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+<div class="relative w-full aspect-square rounded-2xl bg-[#F1F8E9] mb-6 overflow-hidden flex items-center justify-center">
+<img class="w-3/4 h-auto transform group-hover:scale-110 transition-transform duration-500" data-alt="Vibrant lime green packaging for 'Sour Worms' gummy candies. Colorful neon-shaded gummy worms are visible through a window. The design is energetic and fun with cartoon worm mascots. 8k resolution, commercial food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLPK2aWCfLI5b7lkKw635ErdMx4w53Md-tMhWl7ABJBbUWZU-W5WpzqNE-uaTN8ebAeVl-xSs2twcJdVmUMV6qI5EpYm7BK31z8HbE_kvcrYnXEOK-LAc2UEhtFNG-aplpsh6jRDjH2FA0svpBsiYMER_mE7uw0f7437bYR-XQ-uqFpyvz9nqdgsXGAn5wctbag_NNiyovJNxijY19IgGl86bWXvWBQi5-oVFxqCUtZHDO0liIxF_2">
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-md text-[20px] text-deep-grape">Sour Worms</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Tangy, tingly sour sugar coating</p>
+<div class="mt-4 flex justify-between items-center">
+<span class="font-label-md text-label-md text-deep-grape">Rs. 180</span>
+<button class="w-10 h-10 rounded-full bg-gummy-orange text-white flex items-center justify-center hover:scale-110 transition-transform active:scale-90">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-lowest p-6 rounded-[24px] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+<div class="relative w-full aspect-square rounded-2xl bg-[#F3E5F5] mb-6 overflow-hidden flex items-center justify-center">
+<img class="w-3/4 h-auto transform group-hover:scale-110 transition-transform duration-500" data-alt="Playful purple packaging for 'Berry Blast' gummy candies. The bag features illustrated raspberries and blueberries with smiling faces. Vibrant colors, soft studio lighting, ultra-high detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKIwbFF-CVvSdxBHLm9nX1Jx8d6BHAhoykqD5KFyKg0qsqFn_sgdcf9tpPeUoX9-5aFKpqZxFsS0BTXU77FqJjq03sivQk12yOZ1zn4wZ5IjJ2M0NuzQax2M2LXBsvc0BBFTvtCcZSqeo5-gGnhgIht9Xmnuih_N_hUL2MfRQlL1avR8ICQpHU3J81VRMpztKSQMGQU9-i03ejvKCauivzZgxIJX1r6UFYNkT2MQ8gyOyrR3sh3hbG">
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-md text-[20px] text-deep-grape">Berry Blast</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Wild berry flavor explosion</p>
+<div class="mt-4 flex justify-between items-center">
+<span class="font-label-md text-label-md text-deep-grape">Rs. 160</span>
+<button class="w-10 h-10 rounded-full bg-gummy-orange text-white flex items-center justify-center hover:scale-110 transition-transform active:scale-90">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-lowest p-6 rounded-[24px] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+<div class="relative w-full aspect-square rounded-2xl bg-[#FFF3E0] mb-6 overflow-hidden flex items-center justify-center">
+<img class="w-3/4 h-auto transform group-hover:scale-110 transition-transform duration-500" data-alt="Creamy Chews packaging in soft peach and cream colors. Soft-focus background, focus on a high-quality product pouch. Minimalist but playful branding. Professional FMCG marketing style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3HJ3pCmzuUGx0wShIxUbx4qHwVWwmCXYvdz7B5oiOnIHgvM8upV-IW9QAcvYJVHMtM9bxM-zRWrq-PugrTA-m1-TzHcRv2_3BsGtQfTtXBpsxuLgzDh1MnkO4fx_H-ZiYT-ly_WnGMvrvCDHYOthxstHIkhjLOzzkIpQquEj4OJYm83UBbzZrv3ujQCFpiO7i5pu6aHwt18SUVSP6mnYy7Sdf1TEQtd-pbzv8uWMelN7bM4fdi1jC">
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-md text-[20px] text-deep-grape">Creamy Chews</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Smooth milk &amp; fruit blend</p>
+<div class="mt-4 flex justify-between items-center">
+<span class="font-label-md text-label-md text-deep-grape">Rs. 200</span>
+<button class="w-10 h-10 rounded-full bg-gummy-orange text-white flex items-center justify-center hover:scale-110 transition-transform active:scale-90">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Story -->
+<section class="px-margin-desktop py-24" id="about">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center transition-all duration-1000 opacity-100 translate-y-0">
+<div class="flex flex-col gap-8">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-leaf-green">Our Heritage</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-grape">The Heart of Pakistani Sweetness</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    GenFoods was born from a simple mission: to create treats that celebrate the joy of childhood without compromising on quality. Based in the heart of Pakistan, we combine traditional values of care with modern production standards.
+                </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-leaf-green">park</span>
+<div>
+<h4 class="font-label-md text-label-md text-deep-grape">Locally Sourced</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">We partner with local farmers to source the purest fruit pulps and juices.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-leaf-green">biotech</span>
+<div>
+<h4 class="font-label-md text-label-md text-deep-grape">Quality Controlled</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Every batch undergoes 24 rigorous safety checks in our state-of-the-art facility.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-berry-pink/10 rounded-full -z-10 blur-3xl"></div>
+<div class="rounded-[40px] overflow-hidden shadow-2xl rotate-3">
+<img class="w-full h-[500px] object-cover" data-alt="A candid lifestyle photo of three happy children of various ages laughing together and sharing a bag of GenFoods gummies in a sun-drenched modern living room. The lighting is warm and natural, capturing a genuine moment of joy. Cinematic quality, shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiWxydFqWBZcILSvbUl75LK1z89rgr5pSO67C6s5f1GIOzlbt-9njRDwDYCFyFa75yhcgUJykNxG0nrFK8IjlXUktFRD5w6nmT96OM3f3YP-Jb0y-AhKxZGKKeqJGjWUAEJId5c2BP9acUploe57gZ1qXszhcS6qK8bhyRyP6ep1tAGnCLL7qMLJIyAHBAnzMNOrW73vGQVJsa5A24fMARNr73pOkeRXwulPIUSWFgoPcEkYIIzEfA">
+</div>
+<div class="absolute -bottom-8 -right-8 bg-surface-container-lowest p-8 rounded-2xl shadow-xl max-w-xs transform -rotate-3 border-4 border-white">
+<p class="font-headline-md text-[20px] text-gummy-orange mb-2">100% Pure Joy</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic">"We focus on the small details so you can focus on the big smiles."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="px-margin-desktop py-24 bg-surface-container">
+<div class="max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+<h2 class="font-headline-lg text-headline-lg text-deep-grape text-center mb-16">Loved by Families</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Quote Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-[32px] shadow-sm flex flex-col gap-6">
+<div class="flex text-gummy-orange">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface italic">"Finally, a gummy brand that I feel good about giving to my kids. The ingredients list is so clean compared to everything else on the shelf!"</p>
+<div class="flex items-center gap-4 mt-auto">
+<div class="w-12 h-12 rounded-full bg-deep-grape/10 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young smiling mother, clean look, soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBauaf45-Ph9kS6hXpDlwPiU2e0GwEfxHc2cZtU_7_ovVXaDh4HiMVc43tJkKyfzPE3GuaRfIqJgl3tiB3Q5LHieZGFi-Npk-sq_G-1pOAdUa7pkYIWlxUkKyV0ySdzj7HU3p8uYL-bRMCkrjdEBAnG3eFBuX2islUp3YgwCXqPlsvk8DvGBrFLbPTZHNS8TFHMvejHPIeAiLo9Vc4tB6cqr_RxTdVisOnHeeANYi_u0rMclDgBNZyF">
+</div>
+<div>
+<p class="font-label-md text-label-md text-deep-grape">Amina K.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Mother of Two</p>
+</div>
+</div>
+</div>
+<!-- Quote Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-[32px] shadow-sm flex flex-col gap-6 transform md:translate-y-8">
+<div class="flex text-gummy-orange">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface italic">"The Sour Worms are my absolute favorite. They have just the right amount of tang without being overwhelming. Truly premium quality."</p>
+<div class="flex items-center gap-4 mt-auto">
+<div class="w-12 h-12 rounded-full bg-deep-grape/10 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a friendly father, professional studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr2EW9r0dOTCpwYp9IFf4fcCwORpUa37XcLps4sl_rDmrRDw3cySGWwDXSFiLEOKBEn-Llwo_qtkhjf3OWoEquv393gcrY-U5egiETsd6E6bF74P9OlyVgJi1E5ax_UYxyPiMF2p7g2eFe-NhmlKLbCp3Or42DIlkDcwZYGHLWGe-lbIwZdZX3kff8eaC9xootexqhUnCAQLWFGt0UPQ2MszummkejfRwkb_5YAJGVY8FDtA9Tlhdv">
+</div>
+<div>
+<p class="font-label-md text-label-md text-deep-grape">Zaid R.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Home Chef</p>
+</div>
+</div>
+</div>
+<!-- Quote Card 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-[32px] shadow-sm flex flex-col gap-6">
+<div class="flex text-gummy-orange">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface italic">"I love supporting a local Pakistani brand that matches international standards. My children won't eat any other fruit chews now!"</p>
+<div class="flex items-center gap-4 mt-auto">
+<div class="w-12 h-12 rounded-full bg-deep-grape/10 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a happy grandmother, warm and inviting atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBifumRH_MOnwTKJ1aHfF9tw3P23IF02CJYqIYfAjc6WycpkaDdvNEoqDTwZrQKTIZQkR4uyBOWhvNIMNnyF0WkyPHsLsbmNp5BQGHoq_1AnnF8bjwA9bKEU7X60KkxPv3jEK13a3i8ULXmsnN9XOt1mcMouM8rYIZ_onetPtTo4vbtHG5slOQoq07el8kjX_rmggsL-yJVJFDU9vXTcIojEu-dkjbiCCZRWlLIOG3xUGeU5_1alhBs">
+</div>
+<div>
+<p class="font-label-md text-label-md text-deep-grape">Fatima S.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Grandmother</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="px-margin-desktop py-24 relative overflow-hidden" id="where-to-buy">
+<div class="max-w-container-max mx-auto bg-berry-pink rounded-[48px] p-12 md:p-24 relative overflow-hidden flex flex-col items-center text-center gap-8 transition-all duration-1000 opacity-100 translate-y-0">
+<!-- Decorative Blobs inside CTA -->
+<div class="absolute -top-24 -left-24 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+<h2 class="font-display-lg text-[48px] leading-tight text-white max-w-2xl z-10">
+                Ready for some fun? Find us at your local store.
+            </h2>
+<p class="font-body-lg text-body-lg text-white/90 max-w-lg z-10">
+                From corner shops to hypermarkets, GenFoods is everywhere you need sweetness to be.
+            </p>
+<a href="#where-to-buy" class="bg-white text-berry-pink font-label-md text-label-md px-12 py-5 rounded-full hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 z-10 inline-block">Where to Buy</a>
+</div>
+</section>
+<script>
+        // Subtle scroll animation logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('section > div');
+            animatedElements.forEach(el => {
+                el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(el);
+            });
+        });
+    </script>
+</div></main><footer class="w-full bg-deep-grape text-on-tertiary py-16" id="contact"><div class="w-full px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-12"><div class="md:col-span-4 flex flex-col gap-6"><div class="flex items-center gap-unit"><img alt="GenFoods Logo" class="h-10 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ8xMrJbBZbQvHHDZh2nNaDYvaUHgFCB_HFAgMd6VcwQYqLsjXcWEria5cMGKG4nepROl_3dte7yXk6bLSRh_XfKbStQlOjMkpsRNkP86ZjyoLHG3Wc3EBHCb_QRq5LoWB2hoawosdoCUU761SswbthJYigUX3TN3ZSqjOcDkBcPi6JCr9sWnZB4Rdu8vH78klA1Z85AVY82ZeIRZI-nCTnjihAWi6Ne3NSK9TKt5K-hTQkvvGUAez"></div><p class="font-body-lg text-body-lg text-surface-container-low max-w-xs">Fun treats kids love, quality parents trust.</p><div class="flex gap-4"><a class="p-2 rounded-full border border-surface-variant/20 hover:bg-gummy-orange transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a><a class="p-2 rounded-full border border-surface-variant/20 hover:bg-gummy-orange transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">hub</span></a><a class="p-2 rounded-full border border-surface-variant/20 hover:bg-gummy-orange transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a></div></div><div class="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8"><div class="flex flex-col gap-4"><h4 class="font-headline-md text-[18px] text-gummy-orange">Shop</h4><nav class="flex flex-col gap-3"><a class="text-label-md font-label-md text-surface-container-low hover:text-on-tertiary" href="#">Gummy Bears</a><a class="text-label-md font-label-md text-surface-container-low hover:text-on-tertiary" href="#">Sour Strips</a><a class="text-label-md font-label-md text-surface-container-low hover:text-on-tertiary" href="#">Fruit Chews</a></nav></div><div class="flex flex-col gap-4"><h4 class="font-headline-md text-[18px] text-gummy-orange">Company</h4><nav class="flex flex-col gap-3"><a class="text-label-md font-label-md text-surface-container-low hover:text-on-tertiary" href="#">Our Story</a><a class="text-label-md font-label-md text-surface-container-low hover:text-on-tertiary" href="#">Sustainability</a><a class="text-label-md font-label-md text-surface-container-low hover:text-on-tertiary" href="#">Careers</a></nav></div><div class="flex flex-col gap-4"><h4 class="font-headline-md text-[18px] text-gummy-orange">Support</h4><nav class="flex flex-col gap-3"><a class="text-label-md font-label-md text-surface-container-low hover:text-on-tertiary" href="#">Help Center</a><a class="text-label-md font-label-md text-surface-container-low hover:text-on-tertiary" href="#">Contact Us</a><a class="text-label-md font-label-md text-surface-container-low hover:text-on-tertiary" href="#">Shipping Info</a></nav></div></div></div><div class="mt-16 pt-8 border-t border-surface-variant/10 w-full px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-4 text-label-sm font-label-sm text-surface-container-high"><span class="">© 2024 GenFoods Inc. All sweet rights reserved.</span><div class="flex gap-6"><a class="hover:text-on-tertiary" href="#">Privacy Policy</a><a class="hover:text-on-tertiary" href="#">Terms of Service</a></div></div></footer>
+
+</body></html>
