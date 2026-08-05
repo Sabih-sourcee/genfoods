@@ -98,10 +98,15 @@ export const ContactPage: React.FC = () => {
                 call
               </span>
               <div>
-                <h3 className="font-['Fredoka'] text-[16px] font-bold text-[#3D1E52]">Phone</h3>
-                <p className="font-['DM_Sans'] text-[15px] text-[#3D1E52]/80 mt-1">
+                <h3 className="font-['Fredoka'] text-[16px] font-bold text-[#3D1E52]">
+                  {CONTACT.distributor}
+                </h3>
+                <a
+                  href={`tel:${CONTACT.phone.replace(/\s/g, '')}`}
+                  className="font-['DM_Sans'] text-[15px] text-[#FF7A45] hover:underline mt-1 block"
+                >
                   {CONTACT.phone}
-                </p>
+                </a>
               </div>
             </div>
 

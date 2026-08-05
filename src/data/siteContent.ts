@@ -1,8 +1,9 @@
 export const CONTACT = {
-  general: 'info@genfoods.pk',
-  business: 'business@genfoods.pk',
-  careers: 'careers@genfoods.pk',
-  phone: '+92 21 111 436 366',
+  general: 'genfoods.co@gmail.com',
+  business: 'genfoods.co@gmail.com',
+  careers: 'genfoods.co@gmail.com',
+  distributor: 'Al Asar Distribution',
+  phone: '+92 321 2435910',
   location: 'Karachi, Pakistan',
 };
 
