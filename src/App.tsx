@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import { Layout } from './components/Layout';
 import { HomePage } from './pages/HomePage';
-import { GalleryPage } from './pages/GalleryPage';
 import { AboutPage } from './pages/AboutPage';
-import { WhereToBuyPage } from './pages/WhereToBuyPage';
+import { QualityPage } from './pages/QualityPage';
+import { CareersPage } from './pages/CareersPage';
 import { ContactPage } from './pages/ContactPage';
 
 export default function App() {
@@ -14,9 +14,9 @@ export default function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<HomePage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/where-to-buy" element={<WhereToBuyPage />} />
+            <Route path="/quality" element={<QualityPage />} />
+            <Route path="/careers" element={<CareersPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Route>
         </Routes>

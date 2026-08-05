@@ -41,7 +41,7 @@ export const Layout: React.FC = () => {
       <main className="w-full pt-20 bg-[#FFF8EF]">
         <Outlet />
       </main>
-      <Footer onShowToast={(msg) => setToastMessage(msg)} />
+      <Footer />
       <Toast message={toastMessage} onClose={() => setToastMessage(null)} />
     </div>
   );

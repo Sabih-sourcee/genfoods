@@ -9,18 +9,19 @@ export const CtaBanner: React.FC = () => {
         <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
 
         <h2 className="font-['Fredoka'] text-[32px] sm:text-[42px] md:text-[48px] leading-tight text-white max-w-2xl z-10 font-extrabold">
-          Ready for some fun? Find us at your local store.
+          Let's make something sweet together.
         </h2>
 
         <p className="font-['DM_Sans'] text-[16px] sm:text-[18px] text-white/90 max-w-lg z-10">
-          From corner shops to hypermarkets, GenFoods is everywhere you need sweetness to be.
+          Whether you are a distributor, a retailer, or just someone who loves good candy, we
+          would love to hear from you.
         </p>
 
         <Link
-          to="/where-to-buy"
-          className="bg-white text-[#FF4F81] font-['Fredoka'] text-[18px] font-bold px-10 sm:px-12 py-4 sm:py-5 rounded-full hover:bg-[#FFF8EF] hover:scale-105 active:scale-95 transition-all duration-300 z-10 shadow-lg cursor-pointer inline-block"
+          to="/contact"
+          className="bg-white text-[#FF4F81] font-['Fredoka'] text-[18px] font-bold px-10 sm:px-12 py-4 sm:py-5 rounded-full hover:bg-[#FFF8EF] hover:scale-105 active:scale-95 transition-all duration-300 z-10 shadow-lg"
         >
-          Where to Buy
+          Get in Touch
         </Link>
       </div>
     </section>
