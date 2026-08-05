@@ -69,11 +69,11 @@ export const Footer: React.FC<FooterProps> = ({ onShowToast }) => {
               <span className="material-symbols-outlined text-[20px]">share</span>
             </button>
             <Link
-              to="/products"
+              to="/gallery"
               className="p-2.5 rounded-full border border-white/20 hover:bg-[#FF7A45] transition-colors text-white"
-              title="Explore Products"
+              title="Instagram Gallery"
             >
-              <span className="material-symbols-outlined text-[20px]">hub</span>
+              <span className="material-symbols-outlined text-[20px]">photo_camera</span>
             </Link>
             <Link
               to="/where-to-buy"
@@ -87,25 +87,25 @@ export const Footer: React.FC<FooterProps> = ({ onShowToast }) => {
 
         <div className="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
           <div className="flex flex-col gap-4">
-            <h4 className="font-['Fredoka'] text-[18px] font-bold text-[#FF7A45]">Shop</h4>
+            <h4 className="font-['Fredoka'] text-[18px] font-bold text-[#FF7A45]">Explore</h4>
             <nav className="flex flex-col gap-3">
               <Link
-                to="/products"
+                to="/gallery"
                 className="text-[14px] font-['DM_Sans'] text-[#FFF8EF]/70 hover:text-white transition-colors"
               >
-                Gummy Bears
+                Instagram Gallery
               </Link>
               <Link
-                to="/products"
+                to="/about"
                 className="text-[14px] font-['DM_Sans'] text-[#FFF8EF]/70 hover:text-white transition-colors"
               >
-                Sour Strips
+                Our Story
               </Link>
               <Link
-                to="/products"
+                to="/where-to-buy"
                 className="text-[14px] font-['DM_Sans'] text-[#FFF8EF]/70 hover:text-white transition-colors"
               >
-                Fruit Chews
+                Where to Buy
               </Link>
             </nav>
           </div>
@@ -117,13 +117,7 @@ export const Footer: React.FC<FooterProps> = ({ onShowToast }) => {
                 to="/about"
                 className="text-[14px] font-['DM_Sans'] text-[#FFF8EF]/70 hover:text-white transition-colors"
               >
-                Our Story
-              </Link>
-              <Link
-                to="/about"
-                className="text-[14px] font-['DM_Sans'] text-[#FFF8EF]/70 hover:text-white transition-colors"
-              >
-                Sustainability
+                About Us
               </Link>
               <button
                 onClick={() => onShowToast('Careers: Send CV to careers@genfoods.pk')}
@@ -137,12 +131,6 @@ export const Footer: React.FC<FooterProps> = ({ onShowToast }) => {
           <div className="flex flex-col gap-4">
             <h4 className="font-['Fredoka'] text-[18px] font-bold text-[#FF7A45]">Support</h4>
             <nav className="flex flex-col gap-3">
-              <Link
-                to="/contact"
-                className="text-[14px] font-['DM_Sans'] text-[#FFF8EF]/70 hover:text-white transition-colors"
-              >
-                Help Center
-              </Link>
               <Link
                 to="/contact"
                 className="text-[14px] font-['DM_Sans'] text-[#FFF8EF]/70 hover:text-white transition-colors"

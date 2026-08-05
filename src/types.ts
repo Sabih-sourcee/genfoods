@@ -1,25 +1,9 @@
-export interface Product {
+export interface InstagramPost {
   id: string;
-  name: string;
-  subtitle: string;
-  description: string;
-  price: number;
-  category: 'Gummies' | 'Sour' | 'Fruit Chews';
-  bgColor: string;
   image: string;
-  rating: number;
-  reviewsCount: number;
-  weight: string;
-  ingredients: string[];
-  calories: string;
-  sugar: string;
-  halalCertified: boolean;
-  noArtificialColors: boolean;
-}
-
-export interface CartItem {
-  product: Product;
-  quantity: number;
+  caption: string;
+  title: string;
+  hashtags: string[];
 }
 
 export interface StoreLocation {

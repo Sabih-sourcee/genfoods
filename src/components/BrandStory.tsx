@@ -17,7 +17,7 @@ export const BrandStory: React.FC<BrandStoryProps> = ({ showLearnMore = true }) 
             The Heart of Pakistani Sweetness
           </h2>
           <p className="font-['DM_Sans'] text-[16px] sm:text-[18px] leading-[28px] text-[#3D1E52]/80">
-            GenFoods was born from a simple mission: to create treats that celebrate the joy of childhood without compromising on quality. Based in the heart of Pakistan, we combine traditional values of care with modern production standards.
+            Gen Foods was born from a simple mission: to create treats that celebrate the joy of childhood without compromising on quality. Based in the heart of Pakistan, we combine traditional values of care with modern production standards.
           </p>
 
           <div className="space-y-6 pt-2">
@@ -54,7 +54,7 @@ export const BrandStory: React.FC<BrandStoryProps> = ({ showLearnMore = true }) 
             <div className="pt-2">
               <Link
                 to="/about"
-                className="inline-flex items-center gap-2 bg-[#4CAF7D] hover:bg-[#3D1E52] text-white font-['DM_Sans'] text-[14px] font-bold px-6 py-3 rounded-full transition-all duration-300 shadow-sm cursor-pointer active:scale-95"
+                className="inline-flex items-center gap-2 bg-[#4CAF7D] hover:bg-[#3D1E52] text-white font-['DM_Sans'] text-[14px] font-bold px-6 py-3 rounded-full transition-all duration-300 shadow-sm"
               >
                 Learn More About Our Journey
                 <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
@@ -68,13 +68,18 @@ export const BrandStory: React.FC<BrandStoryProps> = ({ showLearnMore = true }) 
           <div className="rounded-[40px] overflow-hidden rotate-3 shadow-xl border-4 border-white transform hover:rotate-0 transition-transform duration-500">
             <img
               className="w-full h-[400px] sm:h-[500px] object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiWxydFqWBZcILSvbUl75LK1z89rgr5pSO67C6s5f1GIOzlbt-9njRDwDYCFyFa75yhcgUJykNxG0nrFK8IjlXUktFRD5w6nmT96OM3f3YP-Jb0y-AhKxZGKKeqJGjWUAEJId5c2BP9acUploe57gZ1qXszhcS6qK8bhyRyP6ep1tAGnCLL7qMLJIyAHBAnzMNOrW73vGQVJsa5A24fMARNr73pOkeRXwulPIUSWFgoPcEkYIIzEfA"
-              alt="Kids enjoying GenFoods gummies"
+              src="/images/instagram/post-5.jpg"
+              alt="Gen Foods citrus sweets"
             />
           </div>
 
-          <div className="absolute -bottom-6 -right-2 sm:-bottom-8 sm:-right-8 bg-[#FFF8EF] p-6 sm:p-8 rounded-2xl shadow-xl max-w-xs transform -rotate-3 border-4 border-white">
-            <p className="font-['Fredoka'] text-[20px] font-bold text-[#FF7A45] mb-2">
+          <div className="absolute -bottom-6 -right-2 sm:-bottom-8 sm:-right-8 bg-[#FFF8EF] p-6 sm:p-8 rounded-2xl shadow-xl max-w-xs transform -rotate-3 border-4 border-white overflow-hidden">
+            <img
+              src="/images/instagram/post-6.jpg"
+              alt="Mint candy"
+              className="w-full h-24 object-cover rounded-xl mb-3"
+            />
+            <p className="font-['Fredoka'] text-[20px] font-bold text-[#FF7A45] mb-1">
               100% Pure Joy
             </p>
             <p className="font-['DM_Sans'] text-[14px] sm:text-[15px] text-[#3D1E52]/80 italic">
