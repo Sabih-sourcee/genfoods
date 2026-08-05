@@ -19,13 +19,13 @@ export const Header: React.FC = () => {
       <div className="h-20 w-full px-4 md:px-[64px] flex items-center justify-between gap-4 md:gap-[24px]">
         <Link
           to="/"
-          className="flex items-center group"
+          className="flex items-center group shrink-0"
           onClick={() => setMobileMenuOpen(false)}
         >
           <img
             alt="Gen Foods"
-            className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105"
-            src="/images/logo.jpg"
+            className="h-14 md:h-16 w-auto max-w-[200px] md:max-w-[240px] object-contain transition-transform group-hover:scale-105"
+            src="/images/logo.png"
           />
         </Link>
 

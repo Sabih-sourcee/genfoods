@@ -9,8 +9,8 @@ export const Footer: React.FC = () => {
           <Link to="/" className="inline-flex items-center">
             <img
               alt="Gen Foods"
-              className="h-14 w-auto object-contain"
-              src="/images/logo.jpg"
+              className="h-16 md:h-20 w-auto max-w-[220px] object-contain"
+              src="/images/logo.png"
             />
           </Link>
           <p className="font-['DM_Sans'] text-[16px] text-[#FFF8EF]/80 max-w-xs leading-relaxed">
